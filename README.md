@@ -1,6 +1,6 @@
-# workshop-example-1
+# ncag-plugin-example
 
-Plugin for showing some examples of a root app plugin.
+This plugin was created for show how to add custom context menu tools for selection or collections inside ez5 and fylr.
 
 This plugin is intended for educational purposes and should not be used in production setups. It allows to view private information such as internal configuration without authentication.
 
