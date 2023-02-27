@@ -1,0 +1,13 @@
+plugin:
+  name: ncag-filepicker-example
+  version: 1.0
+  displayname:
+    de-DE: NCAG Example
+    en-US: NCAG Example
+  info:
+    de-DE: "An example plugin for the filepicker."
+    en-US: "An example plugin for the filepicker."
+  webfrontend:
+    url: ncag-example-plugin.js
+    l10n: l10n/
+    css: ncag-example-plugin.css

@@ -1,0 +1,11 @@
+,key,de-DE,en-US
+,tool.ncag-plugin-tool|text,Example Tool,Example Tool
+,tool.ncag-plugin-tool|icon,fa-circle,fa-circle
+,ncag-plugin-tool-msg,"This is an example of a custom tool added with the plugin, you have selected %(object_number)s objects.","This is an example of a custom tool added with the plugin, you have selected %(object_number)s objects."
+,tool.ncag-plugin-tool-group|text,Example Tools,Example Tools
+,tool.ncag-plugin-tool-group|icon,fa-square,fa-square
+,tool.ncag-plugin-tool-group-1|text,SubTool 1,SubTool 1
+,tool.ncag-plugin-tool-group-1|icon,fa-square,fa-square
+,tool.ncag-plugin-tool-group-2|text,SubTool 2,SubTool 2
+,tool.ncag-plugin-tool-group-2|icon,fa-square,fa-square
+,ncag-modal-title,"Modal Example","Modal Example"
