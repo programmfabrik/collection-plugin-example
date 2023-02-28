@@ -1,11 +1,14 @@
-class NCAGCollectionPlugin extends CollectionPlugin
+class ExampleCollectionPlugin extends CollectionPlugin
 
   # This is the only method we have to override on CollectionPlugin class
   # This method is executed every time we change the selection of objects, or if we
   # deselect the current selection.
   getCurrentTools: (collection) ->
-    objects = collection.getObjects()
-    if objects?.length == 0
+    try
+      objects = collection.getObjects()
+    catch e
+      console.warn("Get Objects fail", e)
+    if not objects or objects?.length == 0
        # We dont have any object selected, we dont show the tool (context menu option)
        # so we return an empty array.
       return []
@@ -112,4 +115,4 @@ class NCAGCollectionPlugin extends CollectionPlugin
 
 # We register the plugin when the app is initialized
 ez5.session_ready ->
-  Collection.registerPlugin(new NCAGCollectionPlugin())
+  Collection.registerPlugin(new ExampleCollectionPlugin())

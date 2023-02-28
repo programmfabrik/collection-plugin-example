@@ -1,5 +1,5 @@
-PLUGIN_NAME = ncag-example-plugin
-PLUGIN_PATH = ncag-example-plugin
+PLUGIN_NAME = example-collection-plugin
+PLUGIN_PATH = example-collection-plugin
 
 INSTALL_FILES = \
     $(WEB)/l10n/cultures.json \
@@ -9,12 +9,12 @@ INSTALL_FILES = \
 	$(WEB)/ncag-example-plugin.js \
 	manifest.yml
 
-L10N_FILES = l10n/ncag-filepicker-example.csv
+L10N_FILES = l10n/example-collection-plugin.csv
 
-SCSS_FILES = src/webfrontend/ncag-example-plugin.scss
+SCSS_FILES = src/webfrontend/example-plugin.scss
 
 COFFEE_FILES = \
-    src/webfrontend/NCAGCollectionPlugin.coffee \
+    src/webfrontend/ExampleCollectionPlugin.coffee \
 
 all: build
 
