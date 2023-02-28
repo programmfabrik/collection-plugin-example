@@ -1,6 +1,6 @@
-# ncag-plugin-example
+collection-plugin-example
 
-This plugin was created for show how to add custom context menu tools for selection or collections inside ez5 and fylr.
+This plugin was created for show how to add custom context menu tools for selections or collections inside ez5 and fylr.
 
 This plugin is intended for educational purposes and should not be used in production setups. It allows to view private information such as internal configuration without authentication.
 
