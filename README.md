@@ -1,4 +1,4 @@
-collection-plugin-example
+# collection-plugin-example
 
 This plugin was created for show how to add custom context menu tools for selections or collections inside ez5 and fylr.
 
