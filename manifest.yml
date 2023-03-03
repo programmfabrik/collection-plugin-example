@@ -1,13 +1,13 @@
 plugin:
-  name: ncag-filepicker-example
+  name: collection-plugin-example
   version: 1.0
   displayname:
-    de-DE: NCAG Example
-    en-US: NCAG Example
+    de-DE: Collection Plugin
+    en-US: Collection Plugin
   info:
-    de-DE: "An example plugin for the filepicker."
-    en-US: "An example plugin for the filepicker."
+    de-DE: "An example for the collection plugin."
+    en-US: "An example for the collection plugin."
   webfrontend:
-    url: ncag-example-plugin.js
+    url: example-collection-plugin.js
     l10n: l10n/
-    css: ncag-example-plugin.css
+    css: example-collection-plugin.css
