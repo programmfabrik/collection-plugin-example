@@ -16,33 +16,33 @@ class ExampleCollectionPlugin extends CollectionPlugin
 
     exampleOne = new ToolboxTool
       group: collection.getToolGroup()
-      name: "ncag-plugin-tool" # Internal name of the tool, this is used for localization of the label and icon , see l10n/ncag-filepicker-example.csv for example.
+      name: "example-plugin-tool" # Internal name of the tool, this is used for localization of the label and icon , see l10n/example-filepicker-example.csv for example.
       sort: "I:1" # Allow sorting the different tools.
       favorite: true # This make the tool visible on the toolbox on the top of the main search. IF false then the tool is only visible on the context menu
       run: =>
         # This function is called when the tool is executed.
         # The $$ is our localization method shortcut, in this case I send an object with the number of objects, see the csv for see how this value is used in the string localized
         # On our documentation you can find all the variations for localize strings.
-        CUI.alert(text: $$("ncag-plugin-tool-msg", object_number: objects.length))
+        CUI.alert(text: $$("example-plugin-tool-msg", object_number: objects.length))
     tools.push(exampleOne)
 
     # In this second example we can see how we can add tools to a tool coverting this in a group tool, for this we
     # simply need to add the subtools in the tools property.
     exampleTwo = new ToolboxTool
       group: collection.getToolGroup()
-      name: "ncag-plugin-tool-group"
+      name: "example-plugin-tool-group"
       sort: "I:2"
       favorite: true
       tools: [
         # We return an array with two tools
         new ToolboxTool
-          name: "ncag-plugin-tool-group-1"
+          name: "example-plugin-tool-group-1"
           run: =>
             # This one execute an alert
             CUI.alert(text:"This is an example of a custom tool inside another tool, you have selected #{objects.length} objects.")
       ,
         new ToolboxTool
-          name: "ncag-plugin-tool-group-2"
+          name: "example-plugin-tool-group-2"
           run: =>
             # In this one we show a modal window so as we need a lot more code we use a class method for running this tool.
             @__runModalExample(objects)
@@ -99,7 +99,7 @@ class ExampleCollectionPlugin extends CollectionPlugin
     # We create the modal window.
     _modal = new CUI.Modal
       pane:
-        header_left: new LocaLabel(loca_key: "ncag-modal-title")
+        header_left: new LocaLabel(loca_key: "example-modal-title")
         content: [
           new CUI.Label(text: "Here is a list of the uuid's of the selected objects:")
         ,
