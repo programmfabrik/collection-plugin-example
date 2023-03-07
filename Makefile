@@ -6,7 +6,7 @@ INSTALL_FILES = \
     $(WEB)/l10n/de-DE.json \
     $(CSS) \
     /l10n/en-US.json \
-	$(WEB)/ncag-example-plugin.js \
+	$(WEB)/example-collection-plugin.js \
 	manifest.yml
 
 L10N_FILES = l10n/example-collection-plugin.csv
